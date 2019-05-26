@@ -29,6 +29,6 @@
 ДЕМО<br/>
 <img src="https://github.com/aposnov/searchGithubAndItunes/blob/master/Supporting%20files/demo.gif" />
 
-Задание выполнил: 
-Поснов Андрей 
+Задание выполнил: <br/>
+Поснов Андрей <br/>
 aposnov.ru
