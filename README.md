@@ -25,5 +25,5 @@
 8. Выполненное задание выложить на GitHub, Bitbucket или GitLab и прислать ссылку.
 
 
-ДЕМО
-![](demo.gif)
+ДЕМО<br/>
+![supporting files/](demo.gif)
