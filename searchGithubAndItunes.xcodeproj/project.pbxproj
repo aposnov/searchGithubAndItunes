@@ -8,24 +8,42 @@
 
 /* Begin PBXBuildFile section */
 		E7C0D5FA229ACE2500271917 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7C0D5F9229ACE2500271917 /* AppDelegate.swift */; };
-		E7C0D5FC229ACE2500271917 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7C0D5FB229ACE2500271917 /* ViewController.swift */; };
+		E7C0D5FC229ACE2500271917 /* SearchTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7C0D5FB229ACE2500271917 /* SearchTableViewController.swift */; };
 		E7C0D5FF229ACE2500271917 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E7C0D5FD229ACE2500271917 /* Main.storyboard */; };
 		E7C0D601229ACE2600271917 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E7C0D600229ACE2600271917 /* Assets.xcassets */; };
 		E7C0D604229ACE2600271917 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E7C0D602229ACE2600271917 /* LaunchScreen.storyboard */; };
 		E7C0D60C229AD08000271917 /* iTunesCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7C0D60B229AD08000271917 /* iTunesCell.swift */; };
 		E7C0D60E229AD09D00271917 /* iTunesCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E7C0D60D229AD09D00271917 /* iTunesCell.xib */; };
+		E7D80676229B2CE2001F1AEA /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7D80675229B2CE2001F1AEA /* NetworkService.swift */; };
+		E7D80681229B2D9B001F1AEA /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7D80680229B2D9B001F1AEA /* NetworkError.swift */; };
+		E7D80685229B2E17001F1AEA /* iTunesNetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7D80684229B2E17001F1AEA /* iTunesNetworkService.swift */; };
+		E7D80687229B2E2E001F1AEA /* GitHubNetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7D80686229B2E2E001F1AEA /* GitHubNetworkService.swift */; };
+		E7D80689229B2EF4001F1AEA /* iTunesResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7D80688229B2EF4001F1AEA /* iTunesResponse.swift */; };
+		E7D8068B229B2EFF001F1AEA /* GitHubResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7D8068A229B2EFF001F1AEA /* GitHubResponse.swift */; };
+		E7D8068D229B32E6001F1AEA /* iTunesMusicModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7D8068C229B32E6001F1AEA /* iTunesMusicModel.swift */; };
+		E7D8068F229B33D6001F1AEA /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7D8068E229B33D6001F1AEA /* Extension.swift */; };
+		E7D80691229B3A74001F1AEA /* iTunesCell2.xib in Resources */ = {isa = PBXBuildFile; fileRef = E7D80690229B3A74001F1AEA /* iTunesCell2.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		E7C0D5F6229ACE2500271917 /* searchGithubAndItunes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = searchGithubAndItunes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E7C0D5F9229ACE2500271917 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		E7C0D5FB229ACE2500271917 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		E7C0D5FB229ACE2500271917 /* SearchTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTableViewController.swift; sourceTree = "<group>"; };
 		E7C0D5FE229ACE2500271917 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E7C0D600229ACE2600271917 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E7C0D603229ACE2600271917 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E7C0D605229ACE2600271917 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E7C0D60B229AD08000271917 /* iTunesCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iTunesCell.swift; sourceTree = "<group>"; };
 		E7C0D60D229AD09D00271917 /* iTunesCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = iTunesCell.xib; sourceTree = "<group>"; };
+		E7D80675229B2CE2001F1AEA /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		E7D80680229B2D9B001F1AEA /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
+		E7D80684229B2E17001F1AEA /* iTunesNetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iTunesNetworkService.swift; sourceTree = "<group>"; };
+		E7D80686229B2E2E001F1AEA /* GitHubNetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitHubNetworkService.swift; sourceTree = "<group>"; };
+		E7D80688229B2EF4001F1AEA /* iTunesResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iTunesResponse.swift; sourceTree = "<group>"; };
+		E7D8068A229B2EFF001F1AEA /* GitHubResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitHubResponse.swift; sourceTree = "<group>"; };
+		E7D8068C229B32E6001F1AEA /* iTunesMusicModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iTunesMusicModel.swift; sourceTree = "<group>"; };
+		E7D8068E229B33D6001F1AEA /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
+		E7D80690229B3A74001F1AEA /* iTunesCell2.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = iTunesCell2.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +61,7 @@
 			isa = PBXGroup;
 			children = (
 				E7C0D5F8229ACE2500271917 /* searchGithubAndItunes */,
+				E7D8067E229B2D37001F1AEA /* Supporting files */,
 				E7C0D5F7229ACE2500271917 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -58,16 +77,112 @@
 		E7C0D5F8229ACE2500271917 /* searchGithubAndItunes */ = {
 			isa = PBXGroup;
 			children = (
-				E7C0D5F9229ACE2500271917 /* AppDelegate.swift */,
-				E7C0D5FB229ACE2500271917 /* ViewController.swift */,
-				E7C0D5FD229ACE2500271917 /* Main.storyboard */,
-				E7C0D600229ACE2600271917 /* Assets.xcassets */,
-				E7C0D602229ACE2600271917 /* LaunchScreen.storyboard */,
-				E7C0D605229ACE2600271917 /* Info.plist */,
-				E7C0D60B229AD08000271917 /* iTunesCell.swift */,
-				E7C0D60D229AD09D00271917 /* iTunesCell.xib */,
+				E7D80677229B2D00001F1AEA /* Application */,
+				E7D80679229B2D14001F1AEA /* SearchTable */,
 			);
 			path = searchGithubAndItunes;
+			sourceTree = "<group>";
+		};
+		E7D80677229B2D00001F1AEA /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				E7D8067F229B2D8C001F1AEA /* Model */,
+				E7D80682229B2DA6001F1AEA /* View */,
+				E7D8067D229B2D2D001F1AEA /* Controller */,
+				E7D80678229B2D06001F1AEA /* NetworkService */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		E7D80678229B2D06001F1AEA /* NetworkService */ = {
+			isa = PBXGroup;
+			children = (
+				E7D80675229B2CE2001F1AEA /* NetworkService.swift */,
+			);
+			path = NetworkService;
+			sourceTree = "<group>";
+		};
+		E7D80679229B2D14001F1AEA /* SearchTable */ = {
+			isa = PBXGroup;
+			children = (
+				E7D8067A229B2D1F001F1AEA /* Model */,
+				E7D8067B229B2D23001F1AEA /* View */,
+				E7D8067C229B2D27001F1AEA /* Controller */,
+				E7D80683229B2DDA001F1AEA /* SearchNetworkService */,
+			);
+			path = SearchTable;
+			sourceTree = "<group>";
+		};
+		E7D8067A229B2D1F001F1AEA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E7D80688229B2EF4001F1AEA /* iTunesResponse.swift */,
+				E7D8068A229B2EFF001F1AEA /* GitHubResponse.swift */,
+				E7D8068C229B32E6001F1AEA /* iTunesMusicModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		E7D8067B229B2D23001F1AEA /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E7C0D5FD229ACE2500271917 /* Main.storyboard */,
+				E7C0D60D229AD09D00271917 /* iTunesCell.xib */,
+				E7D80690229B3A74001F1AEA /* iTunesCell2.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		E7D8067C229B2D27001F1AEA /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				E7C0D5FB229ACE2500271917 /* SearchTableViewController.swift */,
+				E7C0D60B229AD08000271917 /* iTunesCell.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		E7D8067D229B2D2D001F1AEA /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				E7C0D5F9229ACE2500271917 /* AppDelegate.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		E7D8067E229B2D37001F1AEA /* Supporting files */ = {
+			isa = PBXGroup;
+			children = (
+				E7C0D600229ACE2600271917 /* Assets.xcassets */,
+				E7C0D605229ACE2600271917 /* Info.plist */,
+				E7D8068E229B33D6001F1AEA /* Extension.swift */,
+			);
+			path = "Supporting files";
+			sourceTree = "<group>";
+		};
+		E7D8067F229B2D8C001F1AEA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E7D80680229B2D9B001F1AEA /* NetworkError.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		E7D80682229B2DA6001F1AEA /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E7C0D602229ACE2600271917 /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		E7D80683229B2DDA001F1AEA /* SearchNetworkService */ = {
+			isa = PBXGroup;
+			children = (
+				E7D80684229B2E17001F1AEA /* iTunesNetworkService.swift */,
+				E7D80686229B2E2E001F1AEA /* GitHubNetworkService.swift */,
+			);
+			path = SearchNetworkService;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -129,6 +244,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E7C0D604229ACE2600271917 /* LaunchScreen.storyboard in Resources */,
+				E7D80691229B3A74001F1AEA /* iTunesCell2.xib in Resources */,
 				E7C0D601229ACE2600271917 /* Assets.xcassets in Resources */,
 				E7C0D5FF229ACE2500271917 /* Main.storyboard in Resources */,
 				E7C0D60E229AD09D00271917 /* iTunesCell.xib in Resources */,
@@ -142,9 +258,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E7C0D5FC229ACE2500271917 /* ViewController.swift in Sources */,
+				E7D8068B229B2EFF001F1AEA /* GitHubResponse.swift in Sources */,
+				E7C0D5FC229ACE2500271917 /* SearchTableViewController.swift in Sources */,
+				E7D80687229B2E2E001F1AEA /* GitHubNetworkService.swift in Sources */,
+				E7D8068D229B32E6001F1AEA /* iTunesMusicModel.swift in Sources */,
+				E7D8068F229B33D6001F1AEA /* Extension.swift in Sources */,
 				E7C0D60C229AD08000271917 /* iTunesCell.swift in Sources */,
+				E7D80685229B2E17001F1AEA /* iTunesNetworkService.swift in Sources */,
+				E7D80676229B2CE2001F1AEA /* NetworkService.swift in Sources */,
 				E7C0D5FA229ACE2500271917 /* AppDelegate.swift in Sources */,
+				E7D80689229B2EF4001F1AEA /* iTunesResponse.swift in Sources */,
+				E7D80681229B2D9B001F1AEA /* NetworkError.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -292,7 +416,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = GU3LVMLYVJ;
-				INFOPLIST_FILE = searchGithubAndItunes/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Supporting files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -310,7 +434,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = GU3LVMLYVJ;
-				INFOPLIST_FILE = searchGithubAndItunes/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Supporting files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

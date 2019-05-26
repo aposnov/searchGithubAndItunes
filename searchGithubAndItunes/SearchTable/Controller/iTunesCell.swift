@@ -24,6 +24,12 @@ class iTunesCell: UITableViewCell, UITextFieldDelegate {
         
         // Configure the view for the selected state
     }
+    
+    func configure(with track: iTunesMusicModel) {
+        self.author.text = track.artistName
+        self.name.text = track.trackName
+        self.icon.load(url: URL(string: track.picSmall)!)
+    }
 
     
 
