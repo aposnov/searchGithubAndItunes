@@ -12,6 +12,8 @@
 		E7C0D5FF229ACE2500271917 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E7C0D5FD229ACE2500271917 /* Main.storyboard */; };
 		E7C0D601229ACE2600271917 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E7C0D600229ACE2600271917 /* Assets.xcassets */; };
 		E7C0D604229ACE2600271917 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E7C0D602229ACE2600271917 /* LaunchScreen.storyboard */; };
+		E7C0D60C229AD08000271917 /* iTunesCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7C0D60B229AD08000271917 /* iTunesCell.swift */; };
+		E7C0D60E229AD09D00271917 /* iTunesCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E7C0D60D229AD09D00271917 /* iTunesCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		E7C0D600229ACE2600271917 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E7C0D603229ACE2600271917 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E7C0D605229ACE2600271917 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E7C0D60B229AD08000271917 /* iTunesCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iTunesCell.swift; sourceTree = "<group>"; };
+		E7C0D60D229AD09D00271917 /* iTunesCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = iTunesCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +64,8 @@
 				E7C0D600229ACE2600271917 /* Assets.xcassets */,
 				E7C0D602229ACE2600271917 /* LaunchScreen.storyboard */,
 				E7C0D605229ACE2600271917 /* Info.plist */,
+				E7C0D60B229AD08000271917 /* iTunesCell.swift */,
+				E7C0D60D229AD09D00271917 /* iTunesCell.xib */,
 			);
 			path = searchGithubAndItunes;
 			sourceTree = "<group>";
@@ -125,6 +131,7 @@
 				E7C0D604229ACE2600271917 /* LaunchScreen.storyboard in Resources */,
 				E7C0D601229ACE2600271917 /* Assets.xcassets in Resources */,
 				E7C0D5FF229ACE2500271917 /* Main.storyboard in Resources */,
+				E7C0D60E229AD09D00271917 /* iTunesCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -136,6 +143,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E7C0D5FC229ACE2500271917 /* ViewController.swift in Sources */,
+				E7C0D60C229AD08000271917 /* iTunesCell.swift in Sources */,
 				E7C0D5FA229ACE2500271917 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

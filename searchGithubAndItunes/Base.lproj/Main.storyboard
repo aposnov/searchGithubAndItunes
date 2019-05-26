@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,16 +13,64 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="searchGithubAndItunes" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="8h6-dt-DoX">
+                                <rect key="frame" x="0.0" y="44" width="414" height="28"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="27" id="cqn-eM-ght"/>
+                                </constraints>
+                                <segments>
+                                    <segment title="iTunes"/>
+                                    <segment title="GitHub"/>
+                                </segments>
+                                <connections>
+                                    <action selector="chooseSource:" destination="BYZ-38-t0r" eventType="valueChanged" id="bgQ-SE-num"/>
+                                </connections>
+                            </segmentedControl>
+                            <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="zbm-ZB-H6f">
+                                <rect key="frame" x="0.0" y="71" width="414" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="uAJ-Ql-kRX"/>
+                                </constraints>
+                                <textInputTraits key="textInputTraits"/>
+                            </searchBar>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="tlI-zb-Ffm">
+                                <rect key="frame" x="0.0" y="115" width="414" height="747"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="t5D-xY-rpJ"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="NPA-Rx-Z8R"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="8h6-dt-DoX" firstAttribute="leading" secondItem="zbm-ZB-H6f" secondAttribute="leading" id="1fm-Fl-HIK"/>
+                            <constraint firstItem="8h6-dt-DoX" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="27g-nP-s6q"/>
+                            <constraint firstAttribute="trailing" secondItem="8h6-dt-DoX" secondAttribute="trailing" id="4e6-c8-xPm"/>
+                            <constraint firstItem="8h6-dt-DoX" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="8oM-KY-W0E"/>
+                            <constraint firstItem="zbm-ZB-H6f" firstAttribute="trailing" secondItem="tlI-zb-Ffm" secondAttribute="trailing" id="LEA-uR-UWX"/>
+                            <constraint firstItem="tlI-zb-Ffm" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="OQM-En-HNF"/>
+                            <constraint firstItem="zbm-ZB-H6f" firstAttribute="leading" secondItem="tlI-zb-Ffm" secondAttribute="leading" id="brn-pB-arU"/>
+                            <constraint firstItem="tlI-zb-Ffm" firstAttribute="top" secondItem="zbm-ZB-H6f" secondAttribute="bottom" id="iJb-Wu-XoX"/>
+                            <constraint firstItem="zbm-ZB-H6f" firstAttribute="top" secondItem="8h6-dt-DoX" secondAttribute="bottom" id="o89-nq-XwO"/>
+                            <constraint firstItem="8h6-dt-DoX" firstAttribute="trailing" secondItem="zbm-ZB-H6f" secondAttribute="trailing" id="ytP-Tk-eaU"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="searchBar" destination="zbm-ZB-H6f" id="OBC-Al-xR0"/>
+                        <outlet property="segmentedControl" destination="8h6-dt-DoX" id="sOB-dU-bz1"/>
+                        <outlet property="tableView" destination="tlI-zb-Ffm" id="n4t-qr-LmV"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="131.8840579710145" y="119.86607142857142"/>
         </scene>
     </scenes>
 </document>
