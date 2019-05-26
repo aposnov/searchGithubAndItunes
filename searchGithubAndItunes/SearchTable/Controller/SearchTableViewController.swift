@@ -22,9 +22,10 @@ class SearchTableViewController: UIViewController, UITableViewDataSource, UITabl
     @IBAction func chooseSource(_ sender: Any) {
         switch segmentedControl.selectedSegmentIndex {
         case 0:
+            gitHubFromSrv.removeAll()
+            tableView.reloadData()
+            searchBar.text = ""
             sourceType = 0
-            print(sourceType)
-
         case 1:
             itunesFromSrv.removeAll()
             tableView.reloadData()
