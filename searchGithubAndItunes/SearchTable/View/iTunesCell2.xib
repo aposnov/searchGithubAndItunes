@@ -18,15 +18,25 @@
             <subviews>
                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="lNg-4g-dIa">
                     <rect key="frame" x="309" y="10" width="50" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="Pip-1t-Jm3"/>
+                        <constraint firstAttribute="width" constant="50" id="PmC-YO-R0x"/>
+                    </constraints>
                 </imageView>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lRi-eL-P1r">
-                    <rect key="frame" x="259" y="10" width="42" height="21"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lRi-eL-P1r">
+                    <rect key="frame" x="16" y="10" width="285" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="xTD-cR-ZM8"/>
+                    </constraints>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w0u-nq-PrF">
-                    <rect key="frame" x="265" y="36" width="36" height="17"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w0u-nq-PrF">
+                    <rect key="frame" x="16" y="39" width="285" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="9Pt-RM-Toh"/>
+                    </constraints>
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
@@ -35,16 +45,14 @@
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <accessibility key="accessibilityConfiguration" identifier="iTunesCell2"/>
             <constraints>
-                <constraint firstItem="w0u-nq-PrF" firstAttribute="top" secondItem="lRi-eL-P1r" secondAttribute="bottom" constant="5" id="68r-rg-NF1"/>
-                <constraint firstItem="w0u-nq-PrF" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="265" id="CRq-kw-1bX"/>
-                <constraint firstItem="lNg-4g-dIa" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="GQE-Gv-gHj"/>
-                <constraint firstAttribute="bottom" secondItem="w0u-nq-PrF" secondAttribute="bottom" constant="17" id="IpH-I5-GcE"/>
-                <constraint firstItem="lRi-eL-P1r" firstAttribute="top" secondItem="lNg-4g-dIa" secondAttribute="top" id="Net-YW-LYJ"/>
-                <constraint firstItem="w0u-nq-PrF" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="OYP-DK-wkB"/>
-                <constraint firstItem="lNg-4g-dIa" firstAttribute="leading" secondItem="w0u-nq-PrF" secondAttribute="trailing" constant="8" symbolic="YES" id="Pe3-fF-AAB"/>
-                <constraint firstItem="lRi-eL-P1r" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="10" id="VEz-zY-Jv1"/>
-                <constraint firstItem="lNg-4g-dIa" firstAttribute="trailing" secondItem="iN0-l3-epB" secondAttribute="trailingMargin" id="hOT-It-eNb"/>
-                <constraint firstItem="lNg-4g-dIa" firstAttribute="leading" secondItem="lRi-eL-P1r" secondAttribute="trailing" constant="8" symbolic="YES" id="jfD-DS-jFi"/>
+                <constraint firstItem="lNg-4g-dIa" firstAttribute="trailing" secondItem="iN0-l3-epB" secondAttribute="trailingMargin" id="4v2-mv-lJD"/>
+                <constraint firstItem="lNg-4g-dIa" firstAttribute="leading" secondItem="lRi-eL-P1r" secondAttribute="trailing" constant="8" symbolic="YES" id="61S-Bx-ee6"/>
+                <constraint firstItem="lRi-eL-P1r" firstAttribute="top" secondItem="lNg-4g-dIa" secondAttribute="top" id="HJ6-TK-zSL"/>
+                <constraint firstItem="lRi-eL-P1r" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leadingMargin" id="LZ3-7g-Oe2"/>
+                <constraint firstItem="lNg-4g-dIa" firstAttribute="leading" secondItem="w0u-nq-PrF" secondAttribute="trailing" constant="8" symbolic="YES" id="RS1-lT-kS7"/>
+                <constraint firstItem="lRi-eL-P1r" firstAttribute="leading" secondItem="w0u-nq-PrF" secondAttribute="leading" id="c1t-Qj-RvJ"/>
+                <constraint firstItem="lNg-4g-dIa" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="qlE-O8-hXA"/>
+                <constraint firstItem="w0u-nq-PrF" firstAttribute="bottom" secondItem="lNg-4g-dIa" secondAttribute="bottom" id="tmv-r9-oEk"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>

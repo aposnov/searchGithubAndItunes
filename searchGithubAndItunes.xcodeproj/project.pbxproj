@@ -23,6 +23,7 @@
 		E7D8068D229B32E6001F1AEA /* iTunesMusicModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7D8068C229B32E6001F1AEA /* iTunesMusicModel.swift */; };
 		E7D8068F229B33D6001F1AEA /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7D8068E229B33D6001F1AEA /* Extension.swift */; };
 		E7D80691229B3A74001F1AEA /* iTunesCell2.xib in Resources */ = {isa = PBXBuildFile; fileRef = E7D80690229B3A74001F1AEA /* iTunesCell2.xib */; };
+		E7D80693229B3D41001F1AEA /* GitHubModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7D80692229B3D41001F1AEA /* GitHubModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +45,7 @@
 		E7D8068C229B32E6001F1AEA /* iTunesMusicModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iTunesMusicModel.swift; sourceTree = "<group>"; };
 		E7D8068E229B33D6001F1AEA /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
 		E7D80690229B3A74001F1AEA /* iTunesCell2.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = iTunesCell2.xib; sourceTree = "<group>"; };
+		E7D80692229B3D41001F1AEA /* GitHubModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitHubModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +121,7 @@
 				E7D80688229B2EF4001F1AEA /* iTunesResponse.swift */,
 				E7D8068A229B2EFF001F1AEA /* GitHubResponse.swift */,
 				E7D8068C229B32E6001F1AEA /* iTunesMusicModel.swift */,
+				E7D80692229B3D41001F1AEA /* GitHubModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -266,6 +269,7 @@
 				E7C0D60C229AD08000271917 /* iTunesCell.swift in Sources */,
 				E7D80685229B2E17001F1AEA /* iTunesNetworkService.swift in Sources */,
 				E7D80676229B2CE2001F1AEA /* NetworkService.swift in Sources */,
+				E7D80693229B3D41001F1AEA /* GitHubModel.swift in Sources */,
 				E7C0D5FA229ACE2500271917 /* AppDelegate.swift in Sources */,
 				E7D80689229B2EF4001F1AEA /* iTunesResponse.swift in Sources */,
 				E7D80681229B2D9B001F1AEA /* NetworkError.swift in Sources */,

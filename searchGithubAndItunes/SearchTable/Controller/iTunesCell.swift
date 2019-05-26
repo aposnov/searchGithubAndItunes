@@ -30,6 +30,12 @@ class iTunesCell: UITableViewCell, UITextFieldDelegate {
         self.name.text = track.trackName
         self.icon.load(url: URL(string: track.picSmall)!)
     }
+    
+    func configure(with gitHubUser: GitHubModel) {
+        self.author.text = gitHubUser.login
+        self.name.text =  gitHubUser.html_url
+        self.icon.load(url: URL(string: gitHubUser.avatar_url)!)
+    }
 
     
 

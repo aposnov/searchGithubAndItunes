@@ -11,8 +11,8 @@ import Foundation
 class GitHubNetworkService{
     private init() {}
     
-    static func getGitHub(completion: @escaping(GitHubResponse) -> ()){
-        guard let url = URL(string: "https://api.github.com/search/repositories?q=") else { return }
+    static func getGitHub(q: String, completion: @escaping(GitHubResponse) -> ()){
+        guard let url = URL(string: "https://api.github.com/search/users?q="+q) else { return }
         
         NetworkService.shared.getData(url: url) { (json) in
             

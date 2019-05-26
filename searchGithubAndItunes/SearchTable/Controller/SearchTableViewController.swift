@@ -17,6 +17,7 @@ class SearchTableViewController: UIViewController, UITableViewDataSource, UITabl
     var sourceType = 0
     
     var itunesFromSrv = [iTunesMusicModel]()
+    var gitHubFromSrv = [GitHubModel]()
     
     @IBAction func chooseSource(_ sender: Any) {
         switch segmentedControl.selectedSegmentIndex {
@@ -37,8 +38,11 @@ class SearchTableViewController: UIViewController, UITableViewDataSource, UITabl
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let nib = UINib(nibName: "iTunesCell", bundle: nil)
+        var nib = UINib(nibName: "iTunesCell", bundle: nil)
         tableView.register(nib, forCellReuseIdentifier: "iTunesCell")
+        
+         nib = UINib(nibName: "iTunesCell2", bundle: nil)
+        tableView.register(nib, forCellReuseIdentifier: "iTunesCell2")
     }
     
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
@@ -55,14 +59,26 @@ class SearchTableViewController: UIViewController, UITableViewDataSource, UITabl
                 
             } //конец dispatch
         } else if sourceType == 1 {
-            
-            print(searchText)
+            DispatchQueue.main.async {
+                GitHubNetworkService.getGitHub(q: searchText) {(response) in
+                    
+                    self.gitHubFromSrv = response.gitHubFromSrv
+                    
+                    self.tableView.reloadData()
+                    
+                } // конец network service
+                
+            } //конец dispatch
         }
         
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+         if sourceType == 0 {
         return itunesFromSrv.count
+         } else {
+        return gitHubFromSrv.count
+        }
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
@@ -71,23 +87,38 @@ class SearchTableViewController: UIViewController, UITableViewDataSource, UITabl
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        //проверка на четное-нечетное
-        if indexPath.row % 2 == 0 {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "iTunesCell", for: indexPath) as! iTunesCell
-            let track = itunesFromSrv[indexPath.row]
-            cell.configure(with: track)
-            return cell
-        } else {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "iTunesCell2", for: indexPath) as! iTunesCell
-            let track = itunesFromSrv[indexPath.row]
-            cell.configure(with: track)
-            return cell
-        }
-        
+        if sourceType == 0 {
+                //проверка на четное-нечетное
+                if indexPath.row % 2 == 0 {
+                let cell = tableView.dequeueReusableCell(withIdentifier: "iTunesCell", for: indexPath) as! iTunesCell
+                    let track = itunesFromSrv[indexPath.row]
+                    cell.configure(with: track)
+                    return cell
+                } else {
+                let cell = tableView.dequeueReusableCell(withIdentifier: "iTunesCell2", for: indexPath) as! iTunesCell
+                    let track = itunesFromSrv[indexPath.row]
+                    cell.configure(with: track)
+                    return cell
+                }
       
+        } else {
+       
+            //проверка на четное-нечетное
+            if indexPath.row % 2 == 0 {
+                let cell = tableView.dequeueReusableCell(withIdentifier: "iTunesCell2", for: indexPath) as! iTunesCell
+                let gitHubUsr = gitHubFromSrv[indexPath.row]
+                cell.configure(with: gitHubUsr)
+                return cell
+                } else {
+                let cell = tableView.dequeueReusableCell(withIdentifier: "iTunesCell", for: indexPath) as! iTunesCell
+                let gitHubUsr = gitHubFromSrv[indexPath.row]
+                cell.configure(with: gitHubUsr)
+                return cell
+            }
+    
+        }
+    
     }
-    
-    
 
 
 }
