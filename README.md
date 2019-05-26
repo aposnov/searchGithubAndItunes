@@ -26,4 +26,4 @@
 
 
 ДЕМО<br/>
-![](demo1.gif)
+<img src="https://github.com/aposnov/searchGithubAndItunes/blob/master/Supporting%20files/demo.gif" />
