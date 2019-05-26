@@ -26,4 +26,4 @@
 
 
 ДЕМО<br/>
-![supporting files/](demo.gif)
+![](demo.gif)
