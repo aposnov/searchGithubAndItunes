@@ -4,7 +4,7 @@
 - Apple Search API (результаты поиска по iTunes)
 - GitHub Search API (Users - результаты поиска среди пользователей)
 Внешний вид:
-В NavigationBar должен быть SegmentControl, имеющий 2 закладки: iTunes & GitHub. 
+В NavigationBar должен быть SegmentControl, имеющий 2 закладки: iTunes & GitHub.
 Под NavigationBar должен быть SearchBar для ввода тестового запроса, которой не должен
 перемещаться при скроллинге списка. SearchBar должен быть общим для обеих закладок.
 В закладке iTunes:
@@ -24,6 +24,7 @@
 7.Не нужно использовать RAC/rx.
 8. Выполненное задание выложить на GitHub, Bitbucket или GitLab и прислать ссылку.
 
+Описание выполнения: Была выбрана архитектора MVC-N. Задание выполнено без Cocoapods. Верстка с использованием xib. Все условия задания выполнены.
 
 ДЕМО<br/>
 <img src="https://github.com/aposnov/searchGithubAndItunes/blob/master/Supporting%20files/demo.gif" />
