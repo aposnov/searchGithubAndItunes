@@ -28,7 +28,7 @@ class iTunesCell: UITableViewCell, UITextFieldDelegate {
     func configure(with track: iTunesMusicModel) {
         self.author.text = track.artistName
         self.name.text = track.trackName
-        self.icon.load(url: URL(string: track.picSmall)!)
+        self.icon.load(url: URL(string: track.picBig)!)
     }
     
     func configure(with gitHubUser: GitHubModel) {
