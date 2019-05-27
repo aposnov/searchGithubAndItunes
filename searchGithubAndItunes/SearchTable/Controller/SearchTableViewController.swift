@@ -144,6 +144,12 @@ class SearchTableViewController: UIViewController, UITableViewDataSource, UITabl
         self.tabBarController?.tabBar.isHidden = false
         sender.view?.removeFromSuperview()
     }
+    
+     func searchBarSearchButtonClicked(_ searchBar: UISearchBar)
+    {
+  
+        self.searchBar.endEditing(true)
+    }
 
 
 }
