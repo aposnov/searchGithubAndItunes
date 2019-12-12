@@ -6,11 +6,9 @@
 //  Copyright © 2019 Andrey Posnov. All rights reserved.
 //
 
-
 import Foundation
 
 class NetworkService {
-    
     private init() {}
     static let shared = NetworkService()
     

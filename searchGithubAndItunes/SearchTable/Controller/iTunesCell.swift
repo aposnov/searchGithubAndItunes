@@ -14,17 +14,6 @@ class iTunesCell: UITableViewCell, UITextFieldDelegate {
     @IBOutlet weak var author: UILabel!
     @IBOutlet weak var name: UILabel!
     
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        // Initialization code
-    }
-
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-        
-        // Configure the view for the selected state
-    }
-    
     func configure(with track: iTunesMusicModel) {
         self.author.text = track.artistName
         self.name.text = track.trackName
@@ -37,6 +26,5 @@ class iTunesCell: UITableViewCell, UITextFieldDelegate {
         self.icon.load(url: URL(string: gitHubUser.avatar_url)!)
     }
 
-    
 
 }

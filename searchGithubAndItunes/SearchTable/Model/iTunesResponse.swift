@@ -18,8 +18,7 @@ class iTunesResponse {
         
         guard let array = json as? JSON else { throw NetworkError.failInternerError }
         guard let arrayOfResults = array["results"] as? JSONtunes else { throw NetworkError.failInternerError }
-        
-        //print(array)
+
         
         var itunesFromSrv = [iTunesMusicModel]()
         for dictioanary in arrayOfResults {

@@ -19,8 +19,6 @@ class GitHubResponse {
         guard let array = json as? JSON else { throw NetworkError.failInternerError }
         guard let arrayOfResults = array["items"] as? JSONtunes else { throw NetworkError.failInternerError }
         
-        print(arrayOfResults)
-        
         var gitHubFromSrv = [GitHubModel]()
         for dictioanary in arrayOfResults {
             guard let githubUser = GitHubModel(dict: dictioanary) else { continue }
