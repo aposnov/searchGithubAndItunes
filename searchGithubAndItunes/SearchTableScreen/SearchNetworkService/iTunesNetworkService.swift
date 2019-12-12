@@ -12,7 +12,7 @@ class iTunesNetworkService{
     private init() {}
     
     static func getItunes(q: String, completion: @escaping(iTunesMusicModelResponse) -> Void){
-        guard let url = URL(string: "https://itunes.apple.com/search?media=music&term="+q) else { return }
+        guard let url = URL(string: API.Content.iTunesTracks.rawValue+q) else { return }
         NetworkService.shared.getData(url: url) { (json) in
             do {
                 let response = try iTunesMusicModelResponse.decode(from: json as! Data)
@@ -20,7 +20,6 @@ class iTunesNetworkService{
             } catch {
                 print(error)
             }
-            
         }
     }
 }

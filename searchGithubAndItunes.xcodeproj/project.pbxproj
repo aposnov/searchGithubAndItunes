@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		E72298CE23A2DFBF007870F2 /* Decodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E72298CD23A2DFBF007870F2 /* Decodable.swift */; };
+		E72298D123A2EF6E007870F2 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = E72298D023A2EF6E007870F2 /* API.swift */; };
 		E7C0D5FA229ACE2500271917 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7C0D5F9229ACE2500271917 /* AppDelegate.swift */; };
 		E7C0D5FC229ACE2500271917 /* SearchTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7C0D5FB229ACE2500271917 /* SearchTableViewController.swift */; };
 		E7C0D5FF229ACE2500271917 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E7C0D5FD229ACE2500271917 /* Main.storyboard */; };
@@ -27,6 +28,7 @@
 
 /* Begin PBXFileReference section */
 		E72298CD23A2DFBF007870F2 /* Decodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Decodable.swift; sourceTree = "<group>"; };
+		E72298D023A2EF6E007870F2 /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
 		E7C0D5F6229ACE2500271917 /* searchGithubAndItunes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = searchGithubAndItunes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E7C0D5F9229ACE2500271917 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E7C0D5FB229ACE2500271917 /* SearchTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTableViewController.swift; sourceTree = "<group>"; };
@@ -116,6 +118,7 @@
 			isa = PBXGroup;
 			children = (
 				E7D80675229B2CE2001F1AEA /* NetworkService.swift */,
+				E72298D023A2EF6E007870F2 /* API.swift */,
 			);
 			path = NetworkService;
 			sourceTree = "<group>";
@@ -267,6 +270,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E72298D123A2EF6E007870F2 /* API.swift in Sources */,
 				E7C0D5FC229ACE2500271917 /* SearchTableViewController.swift in Sources */,
 				E7D80687229B2E2E001F1AEA /* GitHubNetworkService.swift in Sources */,
 				E7D8068D229B32E6001F1AEA /* iTunesMusicModel.swift in Sources */,
