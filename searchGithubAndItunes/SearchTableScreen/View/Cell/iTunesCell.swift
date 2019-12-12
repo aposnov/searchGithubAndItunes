@@ -11,13 +11,13 @@ import UIKit
 class iTunesCell: UITableViewCell, UITextFieldDelegate {
     
     @IBOutlet weak var icon: UIImageView!
-    @IBOutlet weak var author: UILabel!
-    @IBOutlet weak var name: UILabel!
+    @IBOutlet private weak var author: UILabel!
+    @IBOutlet private weak var name: UILabel!
     
     func configure(with track: iTunesMusicModel) {
         self.author.text = track.artistName
         self.name.text = track.trackName
-        self.icon.load(url: URL(string: track.picBig)!)
+        self.icon.load(url: URL(string: track.artworkUrl100)!)
     }
     
     func configure(with gitHubUser: GitHubModel) {
@@ -25,6 +25,5 @@ class iTunesCell: UITableViewCell, UITextFieldDelegate {
         self.name.text =  gitHubUser.html_url
         self.icon.load(url: URL(string: gitHubUser.avatar_url)!)
     }
-
 
 }
